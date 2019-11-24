@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./main.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div id="wrap">
+        <div id="header">
+
+        </div>
+        <div id="container">
+            <nav id="sidebar">
+                <button></button>    
+            </nav>
+            <div id="main">
+                <canvas id="viewCanvas"></canvas>
+            </div>     
+         </div>
+    </div>
+    <script type="text/javascript" src="./PaintCtrl.js"></script>
+    <script>
+      const main = document.getElementById("main");
+      const canvas = document.getElementById("viewCanvas");
+      canvas.width = main.offsetWidth;
+      canvas.height = main.offsetHeight;
+      var paintCtrl = new PaintCtrl(canvas);
+    </script>
+</body>
+</html>
