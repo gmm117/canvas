@@ -22,13 +22,13 @@
             </div>     
          </div>
     </div>
-    <script type="text/javascript" src="./dist/bundle.js"></script>
+    <script type="text/javascript" src="./dist/painter.js"></script>
     <script>
       const main = document.getElementById("main");
       const canvas = document.getElementById("viewCanvas");
       canvas.width = main.offsetWidth;
       canvas.height = main.offsetHeight;
-      var paintCtrl = new PaintCtrl(canvas);
+      var painter = new painter(canvas);
     </script>
 </body>
 </html>
