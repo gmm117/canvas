@@ -1,5 +1,0 @@
-class PaintViewModel {
-    constructor() {
-        
-    }
-}

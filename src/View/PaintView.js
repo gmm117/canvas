@@ -1,6 +1,6 @@
-import CanvasView from './View/CanvasView';
+import CanvasView from './CanvasView';
 
-class PaintView {
+export default class PaintView {
     constructor(view) {
         if(view.getContext) {
             this.view = new CanvasView(view);
